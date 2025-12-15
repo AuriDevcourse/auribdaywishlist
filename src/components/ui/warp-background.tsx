@@ -51,15 +51,16 @@ export const WarpBackground = ({
       color: string;
 
       constructor() {
-        this.x = Math.random() * canvas.width - canvas.width / 2;
-        this.y = Math.random() * canvas.height - canvas.height / 2;
-        this.z = Math.random() * canvas.width;
+        this.x = canvas ? Math.random() * canvas.width - canvas.width / 2 : 0;
+        this.y = canvas ? Math.random() * canvas.height - canvas.height / 2 : 0;
+        this.z = canvas ? Math.random() * canvas.width : 1;
         this.px = 0;
         this.py = 0;
         this.color = colorPalette[Math.floor(Math.random() * colorPalette.length)];
       }
 
       update(speed: number) {
+        if (!canvas) return;
         this.z -= speed;
         if (this.z <= 0) {
           this.z = canvas.width;
@@ -70,7 +71,7 @@ export const WarpBackground = ({
       }
 
       draw() {
-        if (!ctx) return;
+        if (!ctx || !canvas) return;
 
         const sx = (this.x / this.z) * canvas.width + canvas.width / 2;
         const sy = (this.y / this.z) * canvas.height + canvas.height / 2;
