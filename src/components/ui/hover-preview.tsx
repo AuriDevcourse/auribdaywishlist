@@ -9,34 +9,34 @@ const attendees = [
     id: 1,
     name: "Aiza Watzlawek",
     designation: "Host",
-    image: "/src/assets/aiza.jpg",
+    image: "/aiza.jpg",
   },
   {
     id: 2,
     name: "Auri Baciauskas",
     designation: "Main Guy",
-    image: "/src/assets/auri.jpg",
+    image: "/auri.jpg",
   },
 ]
 
 const previewData = {
   birthday: {
-    image: "/src/assets/birthday1.jpeg",
+    image: "/birthday1.jpeg",
     title: "Birthday",
     subtitle: "Celebrating another year",
   },
   get: {
-    image: "/src/assets/get1.jpeg",
+    image: "/get1.jpeg",
     title: "Get",
     subtitle: "The perfect gift",
   },
   inspiration: {
-    image: "/src/assets/inspiration1.jpeg",
+    image: "/inspiration1.jpeg",
     title: "Inspiration",
     subtitle: "Find your ideas here",
   },
   twentynine: {
-    image: "/src/assets/291.jpeg",
+    image: "/291.jpeg",
     title: "29",
     subtitle: "Years of adventures",
   },
