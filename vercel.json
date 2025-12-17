@@ -2,8 +2,8 @@
   "buildCommand": "npm run build",
   "rewrites": [
     {
-      "source": "/auribdaywishlist/(.*)",
-      "destination": "/auribdaywishlist/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
