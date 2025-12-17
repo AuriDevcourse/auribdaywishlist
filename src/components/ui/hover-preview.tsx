@@ -17,6 +17,66 @@ const attendees = [
     designation: "Main Guy",
     image: "/auri.jpg",
   },
+  {
+    id: 3,
+    name: "Elisabeth Kungla",
+    designation: "Guest",
+    image: "/elisabeth.jpg",
+  },
+  {
+    id: 4,
+    name: "Ioana Janina",
+    designation: "Guest",
+    image: "/ionna.jpg",
+  },
+  {
+    id: 5,
+    name: "Alex Damache",
+    designation: "Guest",
+    image: "/alexd.jpg",
+  },
+  {
+    id: 6,
+    name: "Valentin Isc",
+    designation: "Guest",
+    image: "/valentin.jpg",
+  },
+  {
+    id: 7,
+    name: "Ștefan Cioroiu",
+    designation: "Guest",
+    image: "/sefan.jpg",
+  },
+  {
+    id: 8,
+    name: "Mari Krupa",
+    designation: "Guest",
+    image: "/mari.jpg",
+  },
+  {
+    id: 9,
+    name: "Bence Henz",
+    designation: "Guest",
+    image: "/bence.jpg",
+  },
+  {
+    id: 10,
+    name: "Pierre Albert Lafargue",
+    designation: "Guest",
+    image: "/pierre.jpg",
+  },
+  {
+    id: 11,
+    name: "Andrew Wize",
+    designation: "Guest",
+    image: "/andrei.jpg",
+  },
+  {
+    id: 12,
+    name: "Eividas Mačiulis",
+    designation: "Guest",
+    image: "/eividas.jpg",
+  },
 ]
 
 const previewData = {
