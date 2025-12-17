@@ -154,7 +154,7 @@ function App() {
           </div>
         ) : (
           <section id="wishlist">
-            <h1 className="text-center font-bold text-gray-800 mb-8" style={{ fontSize: '5rem' }}>
+            <h1 className="text-center font-bold text-gray-800 mb-8 text-4xl md:text-7xl lg:text-8xl">
               The Wishlist
             </h1>
             <div className="flex justify-center mb-12">

@@ -66,6 +66,7 @@ export function FlipCard({ front, back, className, gradientColors = ["#FFB3BA", 
         .flip-card-inner {
           position: relative;
           transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
           transition: transform 0.6s;
         }
         
@@ -80,6 +81,7 @@ export function FlipCard({ front, back, className, gradientColors = ["#FFB3BA", 
           height: 100%;
           backface-visibility: hidden;
           -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
           border-radius: 12px;
           overflow: hidden;
         }
