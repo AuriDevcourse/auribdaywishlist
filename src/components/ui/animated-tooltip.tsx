@@ -38,7 +38,7 @@ export const AnimatedTooltip = ({
   };
 
   return (
-    <div className={cn("flex items-center gap-2", className)}>
+    <div className={cn("flex flex-wrap items-center gap-2 max-w-full", className)}>
       {items.map((item) => (
         <div
           className="-mr-4 relative group"

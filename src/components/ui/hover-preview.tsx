@@ -368,10 +368,14 @@ export function HoverPreview() {
               29
             </HoverLink>
           </p>
-          <div className="flex items-center gap-4 mt-6">
-            <span className="text-2xl font-bold text-gray-800">Attendees</span>
-            <span className="h-8 w-px bg-gray-400"></span>
-            <AnimatedTooltip items={attendees} />
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-6">
+            <div className="flex items-center gap-4">
+              <span className="text-2xl font-bold text-gray-800">Attendees</span>
+              <span className="h-8 w-px bg-gray-400"></span>
+            </div>
+            <div className="max-w-[360px] sm:max-w-none">
+              <AnimatedTooltip items={attendees} />
+            </div>
           </div>
         </div>
 
