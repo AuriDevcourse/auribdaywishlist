@@ -57,6 +57,7 @@ export function FlipCard({ front, back, className, gradientColors = ["#FFB3BA", 
       <style>{`
         .flip-card {
           perspective: 1000px;
+          -webkit-perspective: 1000px;
         }
         
         .flip-card:not(.flip-card-inner.flipped) {
@@ -68,10 +69,12 @@ export function FlipCard({ front, back, className, gradientColors = ["#FFB3BA", 
           transform-style: preserve-3d;
           -webkit-transform-style: preserve-3d;
           transition: transform 0.6s;
+          -webkit-transition: -webkit-transform 0.6s;
         }
         
         .flip-card-inner.flipped {
           transform: rotateY(180deg);
+          -webkit-transform: rotateY(180deg);
         }
         
         .flip-card-front,
@@ -84,6 +87,8 @@ export function FlipCard({ front, back, className, gradientColors = ["#FFB3BA", 
           -moz-backface-visibility: hidden;
           border-radius: 12px;
           overflow: hidden;
+          transform: translateZ(0);
+          -webkit-transform: translateZ(0);
         }
         
         .flip-card-front {
@@ -103,6 +108,8 @@ export function FlipCard({ front, back, className, gradientColors = ["#FFB3BA", 
           justify-content: center;
           align-items: center;
           background: white;
+          transform: rotateY(0deg) translateZ(0);
+          -webkit-transform: rotateY(0deg) translateZ(0);
         }
         
         .flip-card-back-border {
@@ -148,7 +155,8 @@ export function FlipCard({ front, back, className, gradientColors = ["#FFB3BA", 
         }
         
         .flip-card-front {
-          transform: rotateY(180deg);
+          transform: rotateY(180deg) translateZ(0);
+          -webkit-transform: rotateY(180deg) translateZ(0);
           background: white;
         }
       `}</style>
