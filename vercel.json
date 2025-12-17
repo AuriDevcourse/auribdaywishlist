@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/auribdaywishlist/(.*)",
+      "destination": "/auribdaywishlist/index.html"
+    }
+  ]
+}
