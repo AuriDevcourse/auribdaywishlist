@@ -115,9 +115,9 @@ export function WishlistCard({ item, onReserve, onUnreserve, forceReveal = false
             </div>
           }
           front={
-            <div className="w-full h-full bg-white p-4">
+            <div className="w-full h-full bg-white p-4 flex flex-col">
               {item.image_url && (
-                <div className="relative w-full overflow-hidden rounded-lg bg-muted mb-3" style={{ height: 'calc(100% - 50px)' }}>
+                <div className="relative w-full overflow-hidden rounded-lg bg-muted mb-4 flex-1">
                   <img
                     src={item.image_url}
                     alt={item.title}
@@ -131,7 +131,7 @@ export function WishlistCard({ item, onReserve, onUnreserve, forceReveal = false
                   )}
                 </div>
               )}
-              <h3 className={`font-bold text-gray-900 ${item.title.length > 30 ? 'text-lg' : item.title.length > 20 ? 'text-xl' : 'text-2xl'}`}>{item.title}</h3>
+              <h3 className={`font-bold text-gray-900 leading-tight ${item.title.length > 30 ? 'text-base' : item.title.length > 20 ? 'text-lg' : 'text-xl'}`}>{item.title}</h3>
             </div>
           }
         />
